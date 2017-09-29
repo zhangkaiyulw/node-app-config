@@ -6,7 +6,7 @@ var path = require('path');
 var CONFIG_DIR = process.env.NODE_CONFIG_DIR;
 // if the CONFIG_DIR env variable is undefined, use the app root dir + 'config/'
 if (CONFIG_DIR === undefined || CONFIG_DIR === null || typeof CONFIG_DIR !== 'string')
-    CONFIG_DIR = path.resolve(process.cwd(), 'config/') + '/';
+    CONFIG_DIR = path.resolve(process.cwd(), 'conf/') + '/';
 else
     CONFIG_DIR = path.resolve(CONFIG_DIR) + '/';
 
